@@ -367,7 +367,7 @@ class MassDM:
                 a = 0
                 while calc > 1:
                     tkns.remove(tkns[a])
-                    calc = IDs / len(tkns)
+                    calc = len(IDs) / len(tkns)
                     a += 1
                     
                 threads = input(" " * ((width//3)-(len(x)//2)) +f"{Fore.LIGHTMAGENTA_EX}[{Fore.LIGHTWHITE_EX}>{Fore.LIGHTMAGENTA_EX}]{Fore.LIGHTWHITE_EX} Threads (1-{calc}) > ")
